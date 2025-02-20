@@ -1,0 +1,34 @@
+{
+    "schemaVersion": 1,
+    "id": "disablechat",
+    "version": "1.0.0",
+    "name": "Disable-Chat",
+    "description": "A mod to disable chat functionality in Minecraft.",
+    "authors": [
+      "DGaberstein",
+      "gaberd",
+      "Geistchen"
+    ],
+    "contact": {
+      "repo": "https://github.com/DGaberstein/disable_chat"
+    },
+    "license": "All-Rights-Reserved",
+    "icon": "assets/disablechat/icon.png",
+    "environment": "*",
+    "entrypoints": {
+      "client": [
+        "tk.jandev.disablechat.client.Disable_ChatClient"
+      ],
+      "main": [
+        "tk.jandev.disablechat.Disable_Chat"
+      ]
+    },
+    "mixins": [
+      "disable-chat.mixins.json"
+    ],
+    "depends": {
+      "fabricloader": ">=0.14.19",
+      "fabric": "*",
+      "minecraft": "1.21.1"
+    }
+}
